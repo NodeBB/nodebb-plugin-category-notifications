@@ -1,0 +1,26 @@
+{
+  "name": "nodebb-plugin-category-notifications",
+  "version": "0.0.1",
+  "description": "Category notifications",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB/nodebb-plugin-category-notifications"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "friends"
+  ],
+  "author": "Baris Usakli <baris@nodebb.org>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "~0.9.0"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  }
+}

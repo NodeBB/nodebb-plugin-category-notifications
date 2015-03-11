@@ -1,0 +1,13 @@
+{
+    "library": "./index.js",
+    "staticDirs": {
+        "category-notifications": "public"
+    },
+    "hooks": [
+        { "hook": "static:app.load", "method": "init"}
+    ],
+    "scripts": [
+		"public/scripts/client.js"
+	],
+    "templates": "./public/templates"
+}
