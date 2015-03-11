@@ -13,7 +13,8 @@
   "keywords": [
     "nodebb",
     "plugin",
-    "friends"
+    "notification",
+    "category"
   ],
   "author": "Baris Usakli <baris@nodebb.org>",
   "license": "MIT",
