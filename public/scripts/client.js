@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 				$('.watch').parent().prepend(btn);
 
-				$('.category-tools').on('click', '.subscribe', function() {
+				$('.category').on('click', '.subscribe', function() {
 					socket.emit('plugins.categoryNotifications.subscribe', {cid: cid}, function(err) {
 						if (err) {
 							return app.alertError(err.message);
@@ -26,7 +26,7 @@ $(document).ready(function() {
 					});
 				});
 
-				$('.category-tools').on('click', '.unsubscribe', function() {
+				$('.category').on('click', '.unsubscribe', function() {
 					socket.emit('plugins.categoryNotifications.unsubscribe', {cid: cid}, function(err) {
 						if (err) {
 							return app.alertError(err.message);
