@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-category-notifications",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Category notifications",
   "main": "index.js",
   "repository": {
