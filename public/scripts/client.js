@@ -7,7 +7,7 @@ $(document).ready(function() {
 			var unsubscribeHtml = '<button type="button" class="btn btn-default btn-warning unsubscribe"><i class="fa fa-pencil"></i> Unsubscribe</button>';
 			var subscribeHtml = '<button type="button" class="btn btn-default btn-success subscribe"><i class="fa fa-pencil"></i> Subscribe</button>';
 
-			var cid = ajaxify.variables.get('category_id');
+			var cid = ajaxify.data.cid;
 			socket.emit('plugins.categoryNotifications.isSubscribed', {cid: cid}, function(err, isSubscribed) {
 				if (err) {
 					return app.alertError(err.message);
