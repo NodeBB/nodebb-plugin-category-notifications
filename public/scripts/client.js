@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 				var btn = isSubscribed ? $(unsubscribeHtml) : $(subscribeHtml);
 
-				$('.watch').parent().prepend(btn);
+				$('[component="category/controls"]').prepend(btn);
 
 				$('.category').on('click', '.subscribe', function() {
 					socket.emit('plugins.categoryNotifications.subscribe', {cid: cid}, function(err) {
