@@ -7,7 +7,8 @@
         { "hook": "static:app.load", "method": "init"},
         { "hook": "filter:admin.header.build", "method": "adminMenu"},
         { "hook": "action:topic.post", "method": "onTopicPost"},
-        { "hook": "action:topic.reply", "method": "onTopicReply"}
+        { "hook": "action:topic.reply", "method": "onTopicReply"},
+        { "hook": "action.user.delete", "method": "onUserDelete"}
     ],
     "scripts": [
 		"public/scripts/client.js"
