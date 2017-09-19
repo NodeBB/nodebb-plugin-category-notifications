@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-plugin-category-notifications"
+    "url": "https://github.com/philanthropy-u/nodebb-plugin-category-notifications"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
