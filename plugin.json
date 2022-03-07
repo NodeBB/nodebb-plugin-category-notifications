@@ -1,8 +1,5 @@
 {
     "library": "./index.js",
-    "staticDirs": {
-        "category-notifications": "public"
-    },
     "hooks": [
         { "hook": "static:app.load", "method": "init"},
         { "hook": "filter:admin.header.build", "method": "adminMenu"},
