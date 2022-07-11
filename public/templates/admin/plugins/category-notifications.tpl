@@ -16,27 +16,6 @@
 	</div>
 </form>
 
-<button class="btn btn-primary" id="save">Save</button>
-
-<script type="text/javascript">
-	'use strict';
-	/* globals app */
-	require(['settings'], function(Settings) {
-		Settings.load('category-notifications', $('.category-notifications-settings'), function(err, settings) {
-			if (err) {
-				return app.alertError(err.message);
-			}
-		});
-
-		$('#save').on('click', function() {
-			Settings.save('category-notifications', $('.category-notifications-settings'), function(err) {
-				if (err) {
-					return app.alertError(err.message);
-				}
-				app.alertSuccess('Saved');
-			});
-			return false;
-		});
-	});
-
-</script>
+<button id="save" class="floating-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+	<i class="material-icons">save</i>
+</button>

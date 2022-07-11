@@ -10,6 +10,9 @@
     "scripts": [
 		"public/scripts/client.js"
 	],
+    "modules": {
+        "../admin/plugins/category-notifications.js": "public/scripts/admin.js"
+    },
     "templates": "./public/templates",
     "languages": "languages",
     "defaultLang": "en-GB"
