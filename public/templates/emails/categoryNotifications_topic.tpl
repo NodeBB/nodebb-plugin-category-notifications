@@ -1,26 +1,53 @@
-<p>[[email:greeting_no_name]],</p>
+<!-- IMPORT emails/partials/header.tpl -->
 
-<p>
-	<a href="{url}/user/{user.slug}">
-		<!-- IF user.picture -->
-		<img style="vertical-align: middle; width: 32px; height: 32px; border-radius: 50%; padding-right: 1em;" src="{user.picture}" title="{user.name}"/>
-		<!-- ELSE -->
-		<div style="vertical-align: middle; width: 32px; height: 32px; line-height: 32px; font-size: 16px; background-color: {notifications.user.icon:bgColor}; color: white; text-align: center; display: inline-block; border-radius: 50%; padding-right: 1em;" title="{user.name}">{notifications.user.icon:text}</div>
-		<!-- ENDIF notifications.image -->
-	</a>
-	<a href="{url}/user/{user.slug}">{user.name}</a> has posted a new topic called "<a href="{url}/topic/{topicSlug}">{title}</a>" in "<a href="{url}/category/{category.slug}">{category.name}</a>":
-</p>
+<!-- Email Body : BEGIN -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+	<!-- 1 Column Text + Button : BEGIN -->
+	<tr>
+		<td bgcolor="#ffffff">
+			<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tr>
+					<td style="padding: 40px 40px 6px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
+						<h1 style="margin: 0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 24px; line-height: 27px; color: #333333; font-weight: normal;">
+							[[email:greeting_no_name]]
+						</h1>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
+						<h1 style="margin: 0 0 10px 0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 18px; line-height: 21px; color: #aaaaaa; font-weight: normal;">
+							<a href="{url}/user/{user.slug}">{user.name}</a> has posted a new topic called "<a href="{url}/topic/{topicSlug}">{title}</a>" in "<a href="{url}/category/{category.slug}">{category.name}</a>"
+						</h1>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 20px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
+						<p style="margin: 0; padding: 6px 0px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 13px; line-height: 26px; color: #666666;">
+							<blockquote>{content}</blockquote>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 32px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
+						<!-- Button : BEGIN -->
+						<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+							<tr>
+								<td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
+									<a href="{url}/topic/{topicSlug}" style="background: #222222; border: 15px solid #222222; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a">
+										<span style="color:#ffffff;" class="button-link">View Topic &rarr;</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+						<!-- Button : END -->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- 1 Column Text + Button : END -->
 
-<blockquote>{content}</blockquote>
+</table>
+<!-- Email Body : END -->
 
-<a href="{url}/topic/{topicSlug}">Click here to view the topic</a>
-
-<p>
-	Thanks,<br />
-	<strong>{site_title}</strong>
-</p>
-
-<hr />
-<p>
-	You are receiving this email because you have subscribed to <a href="{url}/category/{category.slug}">{category.name}</a>.
-</p>
+<!-- IMPORT emails/partials/footer.tpl -->
