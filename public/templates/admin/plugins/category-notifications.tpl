@@ -1,11 +1,11 @@
-<h1>Category Notifications</h1>
+<h1>[[categorynotifications:admin-title]]</h1>
 
 
 <form class="form category-notifications-settings">
 	<div class="row">
 		<div class="col-sm-6 col-xs-12">
 			<div class="form-group">
-				<label>[[categorynotifications:admin-title]]</label>
+				<label>[[categorynotifications:admin-label-notifications]]</label>
 				<select id="notificationSetting" name="type" class="form-control" >
 					<option value="email">[[notifications:email_only]]</option>
 					<option value="notification">[[notifications:notification_only]]</option>
