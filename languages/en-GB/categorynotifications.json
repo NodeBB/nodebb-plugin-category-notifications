@@ -2,5 +2,10 @@
 	"subscribe": "Subscribe",
 	"unsubscribe": "Unsubscribe",
 	"new-topic-in": "New Topic in %1",
-	"new-reply-in": "New Reply in %1"
+	"new-reply-in": "New Reply in %1",
+	"admin-title": "Notification Setting",
+	"email-categorie-post": "<a href='%1/user/%2'>%3</a> has posted a new reply to <a href='%1/topic/%4'>%5</a> in <a href='%1/category/%6'>%7</a>",
+	"email-categorie-topic": "<a href='%1/user/%2'>%3</a> has posted a new topic called <a href='%1/topic/%4'>%5</a> in <a href='%1/category/%6'>%7</a>",
+	"view-topic": "View Topic",
+	"view-post": "View Post"
 }

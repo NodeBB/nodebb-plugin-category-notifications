@@ -5,11 +5,11 @@
 	<div class="row">
 		<div class="col-sm-6 col-xs-12">
 			<div class="form-group">
-				<label>Notification Setting</label>
+				<label>[[categorynotifications:admin-title]]</label>
 				<select id="notificationSetting" name="type" class="form-control" >
-					<option value="email">Send Email Only</option>
-					<option value="notification">Send Notification Only</option>
-					<option value="both">Send Both Email and Notification</option>
+					<option value="email">[[notifications:email_only]]</option>
+					<option value="notification">[[notifications:notification_only]]</option>
+					<option value="both">[[notifications:notification_and_email]]</option>
 				</select>
 			</div>
 		</div>
