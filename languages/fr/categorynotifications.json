@@ -1,11 +1,11 @@
 {
 	"subscribe": "S'abonner",
 	"unsubscribe": "Se désabonner",
-	"new-topic-in": "Nouveau sujet dans %1",
-	"new-reply-in": "Nouvelle réponse dans %1",
+	"new-topic-in": "Nouveau sujet dans '%1'",
+	"new-reply-in": "Nouvelle réponse dans '%1'",
 	"admin-title": "Réglage pour la notification",
 	"email-categorie-post": "<a href='%1/user/%2'>%3</a> a posté une nouvelle réponse  <a href='%1/topic/%4'>%5</a> dans <a href='%1/category/%6'>%7</a>",
-	"email-categorie-topic": "<a href='%1/user/%2'>%3</a> a posté un nouveau sujet nommé <a href='%1/topic/%4'>%5</a> dans <a href='%1/category/%6'>%7</a>",
+	"email-categorie-topic": "<a href='%1/user/%2'>%3</a> a posté un nouveau sujet nommé <a href='%1/topic/%4'>%5</a> dans la catégorie <a href='%1/category/%6'>%7</a>",
 	"view-topic": "Voir le sujet",
 	"view-post": "Voir la réponse"
 }

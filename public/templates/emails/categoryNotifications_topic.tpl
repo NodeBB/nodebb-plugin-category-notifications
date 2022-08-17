@@ -16,7 +16,6 @@
 				<tr>
 					<td style="padding: 0px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
 						<h1 style="margin: 0 0 10px 0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 18px; line-height: 21px; color: #aaaaaa; font-weight: normal;">
-							<a href="{url}/user/{user.slug}">{user.name}</a> has posted a new topic called "<a href="{url}/topic/{topicSlug}">{title}</a>" in "<a href="{url}/category/{category.slug}">{category.name}</a>"
 						    [[categorynotifications:email-categorie-topic,{url},{user.slug},{user.name},{topicSlug},{title},{category.slug},{category.name}]]
 						</h1>
 					</td>
