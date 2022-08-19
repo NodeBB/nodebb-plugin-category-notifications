@@ -5,8 +5,8 @@
 	"new-reply-in": "New Reply in %1",
     "admin-title" : "Category Notifications",
 	"admin-label-notifications": "Notification Setting",
-	"email-categorie-post": "<a href='%1/user/%2'>%3</a> has posted a new reply to <a href='%1/topic/%4'>%5</a> in <a href='%1/category/%6'>%7</a>",
-	"email-categorie-topic": "<a href='%1/user/%2'>%3</a> has posted a new topic called <a href='%1/topic/%4'>%5</a> in <a href='%1/category/%6'>%7</a>",
+	"email-categorie-post": "<a href='%1'>%2</a> has posted a new reply to \"<a href='%3'>%4</a>\" in",
+	"email-categorie-topic": "<a href='%1'>%2</a> has posted a new topic called \"<a href='%3'>%4</a>\" in",
 	"view-topic": "View Topic",
 	"view-post": "View Post"
 }

@@ -16,7 +16,7 @@
 				<tr>
 					<td style="padding: 0px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
 						<h1 style="margin: 0 0 10px 0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 18px; line-height: 21px; color: #aaaaaa; font-weight: normal;">
-						    [[categorynotifications:email-categorie-topic,{url},{user.slug},{user.name},{topicSlug},{title},{category.slug},{category.name}]]
+						    [[categorynotifications:email-categorie-topic,{url}/user/{user.slug},{user.name},{url}/topic/{topicSlug},{title}]] "<a href="{url}/category/{category.slug}">{category.name}</a>"
 						</h1>
 					</td>
 				</tr>

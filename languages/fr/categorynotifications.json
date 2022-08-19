@@ -3,9 +3,10 @@
 	"unsubscribe": "Se désabonner",
 	"new-topic-in": "Nouveau sujet dans '%1'",
 	"new-reply-in": "Nouvelle réponse dans '%1'",
+    "admin-title" : "Notifications pour les catégories",
 	"admin-label-notifications": "Réglage pour la notification",
-	"email-categorie-post": "<a href='%1/user/%2'>%3</a> a posté une nouvelle réponse  dans le sujet <a href='%1/topic/%4'>%5</a> dans la catégorie <a href='%1/category/%6'>%7</a>",
-	"email-categorie-topic": "<a href='%1/user/%2'>%3</a> a posté un nouveau sujet nommé <a href='%1/topic/%4'>%5</a> dans la catégorie <a href='%1/category/%6'>%7</a>",
+    "email-categorie-post" : "<a href='%1'>%2</a> a posté une nouvelle réponse  dans le sujet \"<a href='%3'>%4</a>\" dans la catégorie",
+    "email-categorie-topic": "<a href='%1'>%2</a> a posté un nouveau sujet nommé \"<a href='%3'>%4</a>\" dans la catégorie",
 	"view-topic": "Voir le sujet",
 	"view-post": "Voir la réponse"
 }
