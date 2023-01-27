@@ -16,7 +16,7 @@
 				<tr>
 					<td style="padding: 0px 40px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 15px; line-height: 20px; color: #555555;">
 						<h1 style="margin: 0 0 10px 0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 18px; line-height: 21px; color: #aaaaaa; font-weight: normal;">
-							<a href="{url}/user/{user.slug}">{user.name}</a> has posted a new reply to "<a href="{url}/topic/{topicSlug}">{title}</a>" in "<a href="{url}/category/{category.slug}">{category.name}</a>"
+						    [[categorynotifications:email-categorie-post,{url}/user/{user.slug},{user.name},{url}/topic/{topicSlug},{title}]] "<a href="{url}/category/{category.slug}">{category.name}</a>"
 						</h1>
 					</td>
 				</tr>
@@ -34,7 +34,7 @@
 							<tr>
 								<td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
 									<a href="{url}/post/{pid}" style="background: #222222; border: 15px solid #222222; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a">
-										<span style="color:#ffffff;" class="button-link">View Post &rarr;</span>
+										<span style="color:#ffffff;" class="button-link">[[categorynotifications:view-post]] &rarr;</span>
 									</a>
 								</td>
 							</tr>
