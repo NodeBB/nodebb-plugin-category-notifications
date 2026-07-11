@@ -3,7 +3,7 @@
 define('admin/plugins/category-notifications', [
 	'settings', 'alerts',
 ], function (settings, alerts) {
-	var ACP = {};
+	const ACP = {};
 
 	ACP.init = function () {
 		settings.load('category-notifications', $('.category-notifications-settings'));
